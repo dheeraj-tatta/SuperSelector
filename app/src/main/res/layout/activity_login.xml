@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/teal_200"
+    tools:context=".MainActivity">
+
+    <ImageView
+
+        android:id="@+id/imageView7"
+        android:layout_width="406dp"
+        android:layout_height="200dp"
+        android:contentDescription="@string/app_logo"
+        android:src="@drawable/sports"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:id="@+id/phoneLl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/TextAppearance.MaterialComponents.Subtitle1"
+            android:layout_marginTop="10dp"
+            android:text="Enter your phone_number"
+            android:textAlignment="center" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/TextAppearance.MaterialComponents.Caption"
+            android:text="Enter your phone number to continue"
+            android:textAlignment="center"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/phoneEt"
+            android:layout_marginTop="10dp"
+            android:hint="+91xxxxxxxxxx"
+            android:textAlignment="center"
+            android:inputType="phone"
+            android:padding="10dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/phoneContinueBtn"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:text="Continue"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/codeLl"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/TextAppearance.MaterialComponents.Subtitle1"
+            android:layout_marginTop="10dp"
+            android:text="Verification Code"
+            android:textAlignment="center" />
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/codeSentDescription"
+            android:layout_height="wrap_content"
+            style="@style/TextAppearance.MaterialComponents.Caption"
+            android:text="Enter the verification code"
+            android:textAlignment="center"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/codeEt"
+            android:layout_marginTop="10dp"
+            android:hint="+91xxxxxxxxxx"
+            android:textAlignment="center"
+            android:inputType="phone"
+            android:padding="10dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/resendCodeTv"
+            android:text="@string/resendCode"
+            android:textAlignment="center"
+            android:textColor="#777777"
+            android:layout_marginTop="5dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/codeSubmitBtn"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:text="Submit"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>
+
+    <!--
+
+        <EditText
+            android:id="@+id/et_cc"
+            android:layout_width="142dp"
+            android:layout_height="71dp"
+            android:layout_marginTop="64dp"
+            android:gravity="center"
+            android:hint="Country code"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.144"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <ImageView
+
+            android:id="@+id/imageView7"
+            android:layout_width="406dp"
+            android:layout_height="200dp"
+            android:contentDescription="app_logo"
+            android:src="@drawable/sports"
+            app:layout_constraintBottom_toTopOf="@+id/textView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="248dp"
+            android:layout_marginBottom="137dp"
+            android:text="Super Selector"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/btn_login"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <!-    <EditText-->
+    <!--        android:id="@+id/et_password"-->
+    <!--        android:layout_width="200dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="36dp"-->
+    <!--        android:gravity="center"-->
+    <!--        android:hint="Password"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/et_username" />-->
+    <!--
+        <EditText
+            android:id="@+id/et_mobile"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="90dp"
+            android:gravity="center"
+            android:hint="Mobile number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.857"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="223dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="134dp"
+            android:background="@drawable/login"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <!-    <ImageView-->
+    <!--        android:layout_width="64dp"-->
+    <!--        android:layout_height="66dp"-->
+    <!--        android:src="@drawable/facebook"-->
+    <!--        android:id="@+id/iv_fb"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toStartOf="@+id/iv_insta"-->
+    <!--        app:layout_constraintHorizontal_bias="0.405"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        app:layout_constraintVertical_bias="0.93" />-->
+
+    <!--    <ImageView-->
+    <!--        android:id="@+id/iv_insta"-->
+    <!--        android:layout_width="121dp"-->
+    <!--        android:layout_height="95dp"-->
+    <!--        android:src="@drawable/insta"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        app:layout_constraintVertical_bias="0.948" />-->
+
+    <!--    <ImageView-->
+    <!--        android:id="@+id/iv_twitter"-->
+    <!--        android:layout_width="88dp"-->
+    <!--        android:layout_height="64dp"-->
+    <!--        android:layout_marginEnd="16dp"-->
+    <!--        android:src="@drawable/twitter"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        app:layout_constraintVertical_bias="0.928" />-->

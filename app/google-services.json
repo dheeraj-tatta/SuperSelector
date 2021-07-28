@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "318079022524",
+    "project_id": "porsche-7f517",
+    "storage_bucket": "porsche-7f517.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:318079022524:android:dc40e8f44788dce9e827b9",
+        "android_client_info": {
+          "package_name": "com.example.porsche"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "318079022524-2hgoeh69s4v4jmg7m64jtgk0j4q1tnjs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.porsche",
+            "certificate_hash": "83738b6bac2bd31c4027104fbdd39911713cbcb4"
+          }
+        },
+        {
+          "client_id": "318079022524-pj5f8pbaali2hba63tt85f3ldrujiuue.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChNaveJwwvk3_1OXrW_lwIB2FT1rEJHj0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "318079022524-pj5f8pbaali2hba63tt85f3ldrujiuue.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
